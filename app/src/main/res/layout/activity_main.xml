@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.app.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    >
+
+    <FrameLayout
+        android:id="@+id/f_1"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/suct"
+        android:layout_marginTop="10dp">
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="250dp"
+        android:textColor="#000000"
+        android:text="SYUCT"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <!--学号部分-->
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="330dp"
+        android:background="@drawable/gb_text"
+        android:hint="     输入学号"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+    <!--密码部分-->
+    <EditText
+        android:id="@+id/et_2"
+        android:layout_width="323dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/et_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gb_text"
+        android:hint="    输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:selectAllOnFocus="false"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/et_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/gb_login"
+        android:text="登陆"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tv_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:textSize="17dp"
+        android:background="#FFFFFF"
+        android:text="忘记密码？" />
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="记住账号/密码"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:layout_marginTop="30dp"
+        android:checked="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_2"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="自动登录"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:checked="true"
+        android:layout_below="@id/cb_1"
+        android:textSize="18sp" />
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="370dp"
+        app:srcCompat="@drawable/users"/>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="370dp"
+        app:srcCompat="@drawable/password"/>
+    <!--小眼睛-->
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="330dp"
+        android:textOn=""
+        android:textOff=""
+        android:background="@drawable/button_visibility_bg"/>
+</RelativeLayout>

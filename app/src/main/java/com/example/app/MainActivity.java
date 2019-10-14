@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+//找到id
     public void findID(){
         mEtUserName = findViewById(R.id.et_1);
         mEtPassWord = findViewById(R.id.et_2);
